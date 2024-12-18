@@ -1,0 +1,377 @@
+@font-face {
+    font-family: 'oswald';
+    src: url('/FONTS/Oswald/Oswald-VariableFont_wght.ttf');
+}
+
+/* Estilos Generales */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'oswald', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Estilos header */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #143642;
+    padding: 15px;
+}
+
+.menu-left, .menu-right{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0 30px;
+}
+
+.menu-left li, .menu-right li{
+    margin-right: 20px;
+}
+
+.menu-right li:last-child {
+    margin-right: 0;
+
+}
+
+.header a {
+    text-decoration: none; 
+    color: #EC9A29;
+    transition: all 0.3s;
+}
+
+.header a:hover{
+    text-shadow:0px 0px 10px #EC9A29;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #143642;
+    border: 2px solid #EC9A29;
+    border-radius: 25px;
+    padding: 1px 10px;
+    width: 152px; 
+    margin-right: 0;
+  }
+  
+  .search-container input {
+    flex: 1;
+    border: none;
+    background: none;
+    color: #EC9A29; 
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .search-container form button {
+    border: none;
+    background: none;
+    color: #EC9A29;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+    transition: all 0.3s;
+  }
+  
+  .search-container button:hover {
+    text-shadow:0px 0px 10px #EC9A29;
+  }
+  
+
+/* Estilos Logo */
+
+.logo{
+    display: flex;
+    width: 100%;
+    min-height: 120px;
+    background-color: #E9f7fc;
+}
+
+.foto-logo{
+    flex: 1;
+    text-align: end;
+    padding: 30px;
+}
+
+.nombre-logo{
+    flex: 4;
+    padding: 40px;
+    
+}
+
+.nombre-logo  h1{
+    font-size: 55px;
+    color: #143642;
+}
+
+.nombre-logo span{
+    color: #0F8B8D;
+}
+
+.nombre-logo p{
+    color: #EC9A29;
+}
+
+/* Estilos buscador */
+
+.sectionSearch{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: 50%;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.sectionSearch input[type="text"]{
+    border-radius: 5px;
+    background-color:  #E9f7fc;
+    color: #EC9A29;
+    width: 40%;
+    padding: 8px;
+}
+
+.sectionSearch button{
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #143642;
+    color: white;
+    transition: all 0.3s;  
+}
+
+.sectionSearch button:hover{
+    color: #EC9A29;
+    text-shadow:0px 0px 10px #EC9A29;
+}
+
+/* Estilos tarjetas de peliculas */
+#cards-movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 50px;
+}
+
+.cards-style{
+    border: 1px solid #143642;
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+    background-color: #E9f7fc;
+}
+
+.cards-style img{
+    width: 100%;
+    height: auto; 
+    max-width: 100%; 
+    max-height: 150px; 
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.cards-style p{
+    font-size: 10px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    width: 100%;
+}
+
+.cards-style a {
+    color: #0F8B8D;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.cards-style a:hover{
+    text-shadow: 0px 0px 5px #0F8B8D;
+}
+
+/* Estilos para pagina de detalles */
+
+#movie-details{
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+.detail-page-card {
+    display: block;
+    border: 2px solid #143642;
+    border-radius: 10px;
+    background-color: #E9f7fc;
+    width: 40%;
+    height: auto;
+    padding: 25px;
+    
+}
+
+.detail-page-card img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.detail-page-card p{
+    padding: 10px;
+}
+
+.detail-page-card a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color:#143642;
+    transition: all 0.3s;
+}
+
+.detail-page-card a:hover{
+    text-shadow: 0px 0px 5px #143642;
+}
+
+
+/* estilos pagina sobre nosotros */
+
+.about {
+    display: block;
+    padding: 15px; 
+}
+
+.about h1{
+    color: #0F8B8D;
+    text-align: center;
+}
+
+.about p{
+    margin-top: 10px;
+    padding: 10px;
+    line-height: 30px;
+    font-size: 19px;
+    color: #143642;
+}
+
+.about li {
+    display: block;
+    color: #EC9A29;
+    list-style: none;
+    padding-left: 10px;
+    font-size: 19px;
+   
+}
+
+/* Estilos footer*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px;
+    margin-top: 20px;
+    background-color: #143642;
+    
+}   
+
+.block-1 {
+    flex: 33%;
+    text-align: center;
+    margin-right: 80px;
+}
+
+
+.block-2{
+    flex: 33%;
+    text-align: center;  
+    font-size: 22px;
+     margin-right: 100px;
+}
+
+.block-4 span{
+    color: #EC9A29;
+    
+}
+
+.fa-brands{
+    transition: all 0.3s;
+    color: #EC9A29;
+}
+
+.fa-facebook:hover{
+    color: #394C77;
+}
+
+.fa-youtube:hover {
+    color: red;
+}
+
+.fa-pinterest:hover {
+    color: red;
+}
+
+.fa-instagram:hover {
+    background-image: linear-gradient(to right, purple, pink, orange);
+    -webkit-background-clip: text;
+    color: transparent;
+    color: linear-gradient(45deg, purple, pink, orange)
+}
+
+.fa-linkedin:hover{
+    color: skyblue;
+}
+
+.block-1 > ul > li{
+    list-style-type: none;
+}
+
+
+.block-1 > ul > li > a {
+    text-decoration: none;
+    color: #EC9A29;
+    transition: all 0.3s;
+    
+}
+
+.block-1 > ul > li > a:hover {
+    text-shadow: 0px 0px 5px #EC9A29;
+}
+
+.block-4{
+    width: 100%;
+    background-color: #143642;
+    padding: 5px;
+    height: auto;
+    
+
+}
+
+.links a{
+    display: inline-flex;
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+    margin-top: 5px;
+
+}
+
+.active{
+  color: #0F8B8D;
+}
+
+
+/* 
+#0F8B8D
+#EC9A29
+#A8201A 
+*/

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a669f840a0.js" crossorigin="anonymous"></script>
+    <title>SearchMovies</title>
+</head>
+<body>
+<!-- Barra de navegacion y logo de la pagína -->
+
+   <header class="header">
+        <ul class="menu-left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Quienes Somos?</a></li>
+        </ul> 
+        
+        <ul class="menu-right" >
+            <li><a title="Facebook" href="https://es-es.facebook.com/login/?next=https%3A%2F%2Fes-es.facebook.com%2F" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a title="X-twitter" href="https://x.com/?lang=es" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a title="YouTube" href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a title="Instagram" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a title="Email" href="#"><i class="fa-solid fa-envelope"></i></a></li>
+            <li>
+                <div class="search-container">
+                    <form action="https://www.google.com/search" method="get" target="_blank">
+                        <input type="text" name="q" id="headerSearchInput" placeholder="Buscar en Google..">
+                        <button id="headerSearchButton"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+   </header>
+
+   <section>
+        <div class="logo">
+            <div class="foto-logo">
+                <img src="/IMG/fondo-cine.png" alt="logo" width="60%">
+            </div>
+            
+            <div class="nombre-logo">
+                <h1>Movie<span>Search</span></h1>
+                <p>Pasión por el cine</p>
+            </div>
+        </div>
+   </section>
+
+   <!-- ****************************** Contenido de la página ************************************************ -->
+
+    <!-- Buscador -->
+    <section class="sectionSearch">
+        <input type="text" id="searchInput" placeholder="Ingrese el nombre de la película">
+        <button id="searchButton">Buscar</button>
+    </section>
+
+   <!-- Tarjetas de peliculas -->
+ 
+    <div id="cards-movies"></div>
+    
+  <!-- footer -->
+
+  <footer>
+  
+    <div class="block-1">
+      <ul>
+        <li><a href="#">Aviso Legal</a></li>
+        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="#">Política de cookies</a></li>
+        <li><a href="#">Política de calidad</a></li> 
+      </ul>
+   </div>
+  
+   <div class="block-2">
+     <a routerLink="/inicio"><img src="/IMG/fondo-cine.png" alt="logo" width="150px"></a>
+     <div class="links">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+     </div>
+   </div>
+
+  
+  
+   <div class="block-1">
+    <ul>
+      <li><a href="#">Movie Search</a></li>
+      <li><a href="#">Blog</a></li>
+      <li> <a routerLink="/contacto">Contact</a></li>
+      <li><a href="#">Preguntas Frecuentes</a></li> 
+    </ul>
+    
+   </div>
+
+</footer>
+
+    <script type="module" src="/JS/main.js"></script>
+</body>
+</html>
