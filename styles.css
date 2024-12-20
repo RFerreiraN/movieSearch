@@ -372,28 +372,44 @@ footer{
 /* Media Queries */
 
 @media screen and (max-width : 600px) {
+
+    /* Estilos generales */
+
     *{
         margin: 0;
         padding: 0;
-        max-width: 600px;
+        
     }
+
+    /* Estilos del header */
 
     .header{
         display: flex;
-        width: 100%;   
+        justify-content: center;   
     }
 
-    .menu-right a{
+    .search-container{
         display: none;
     }
+
+    /* Estilos del logo */
      
-    .foto-logo img{
-        width: 100px;
-    }
+   .logo{
+        display: flex;
+   }
+
+   .foto-logo{
+      display: none;  
+   }
+
+   .nombre-logo{
+        text-align: center;     
+   }
 
     footer{
         display: block;
         width: 100%;
+        height: auto;
     }
 
     .block-1 {
@@ -404,5 +420,19 @@ footer{
         margin-left: 50px;
         padding: 10px;
     }
+
+    /* Estilos tarjetas */
+
+   #cards-movies{
+       display: block;
+       justify-items: center;
+   }
+
+   /* Estilos pagina de detalles */
+
+   .detail-page-card{
+        display: block;
+        width: 60%;
+   }
    
 }
